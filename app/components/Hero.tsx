@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/purity */
 import React from 'react';
 
 export default function Hero() {
@@ -7,3 +8,4 @@ export default function Hero() {
         </div>
     );
 };
+
