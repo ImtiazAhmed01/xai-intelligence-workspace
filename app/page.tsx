@@ -1,28 +1,19 @@
-'use client';
-
-// import Hero from '@/components/Hero';
-// import InsightFlow from '@/components/InsightFlow';
-// import Dashboard from '@/components/Dashboard';
-// import Signature3D from '@/components/Signature3D';
-import Hero from "./components/Hero";
-import InsightFlow from "./components/InsightFlow";
-import Dashboard from "./components/Dashboard";
-import Singature3D from "./components/Signature3D";
-// import Singature3D from "./components/Signature3D";
+import Nav from "@/components/Nav";
+import Hero from "@/components/Hero/Hero";
+import InsightFlow from "@/components/InsightFlow/InsightFlow";
+import DashboardPreview from "@/components/Dashboard/DashboardPreview";
+import Signature from "@/components/Signature/Signature";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      {/* <Hero /> */}
-      <Hero></Hero>
+    <main className="relative w-full bg-ink-950">
+      <Nav />
+      <Hero />
       <InsightFlow />
-      <Dashboard />
-      {/* <Signature3D /> */}
-      <Singature3D></Singature3D>
-
-      <footer className="py-20 text-center text-sm text-gray-500 border-t border-white/10">
-        © 2026 Xai Intelligence Workspace • Frontend Challenge Prototype
-      </footer>
+      <DashboardPreview />
+      <Signature />
+      <Footer />
     </main>
   );
 }

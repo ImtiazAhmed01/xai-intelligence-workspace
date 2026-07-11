@@ -1,16 +1,11 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
+import type { Metadata } from "next";
+import "./globals.css";
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-});
 
 export const metadata: Metadata = {
-  title: 'Xai – Intelligence Workspace',
-  description: 'From raw data to structured intelligence',
-  icons: { icon: '/favicon.ico' },
+  title: "Xai — Intelligence Workspace",
+  description:
+    "Xai turns raw data into structured intelligence, actionable insight, and AI automations — calmly, and in real time.",
 };
 
 export default function RootLayout({
@@ -19,8 +14,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${inter.variable} font-sans antialiased`}>{children}</body>
+    <html lang="en">
+      <body className="noise bg-ink-950">{children}</body>
     </html>
   );
 }
