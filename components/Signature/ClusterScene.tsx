@@ -38,7 +38,7 @@
 //       r * Math.cos(phi)
 //     );
 
-//     // structured: concentric rings by group, evenly spaced — a legible graph
+//     // structured: concentric rings by group, evenly spaced - a legible graph
 //     const group = i % RING_GROUPS;
 //     const ringRadius = 1.3 + group * 1.15;
 //     const countInRing = Math.floor(NODE_COUNT / RING_GROUPS);
@@ -240,7 +240,7 @@ function buildNodes(): Node[] {
       r * Math.cos(phi)
     );
 
-    // structured: concentric rings by group, evenly spaced — a legible graph
+    // structured: concentric rings by group, evenly spaced - a legible graph
     const group = i % RING_GROUPS;
     const ringRadius = 1.3 + group * 1.15;
     const countInRing = Math.floor(NODE_COUNT / RING_GROUPS);

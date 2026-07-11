@@ -52,7 +52,7 @@ body {
   text-wrap: balance;
 }
 
-/* Custom focus ring — visible, on-brand, never removed */
+/* Custom focus ring - visible, on-brand, never removed */
 :focus-visible {
   outline: 2px solid #5b8cff;
   outline-offset: 3px;

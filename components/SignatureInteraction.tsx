@@ -56,7 +56,7 @@ export default function SignatureInteraction() {
             </h2>
             <p className="text-mist-400">
               As new signal arrives, Xai continuously re-clusters related events
-              into live automation groups — no manual tagging, no static rules.
+              into live automation groups - no manual tagging, no static rules.
               Move your cursor, keep scrolling: the system is reasoning about
               structure in real time, not just displaying it.
             </p>

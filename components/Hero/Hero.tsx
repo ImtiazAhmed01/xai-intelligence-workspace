@@ -73,7 +73,7 @@ export default function Hero() {
             className="section-label mb-6 inline-flex items-center gap-2"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-signal animate-pulse-soft" />
-            Xai — Intelligence Workspace
+            Xai - Intelligence Workspace
           </motion.span>
 
           <motion.h1
@@ -90,7 +90,7 @@ export default function Hero() {
             className="mt-6 max-w-lg text-balance text-base text-mist-400 sm:text-lg"
           >
             Xai ingests the noise your organization produces every day and turns
-            it into a calm, structured system of insight — built for the people
+            it into a calm, structured system of insight - built for the people
             who have to decide, not just report.
           </motion.p>
 

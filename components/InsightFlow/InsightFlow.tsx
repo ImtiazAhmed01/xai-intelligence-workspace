@@ -11,7 +11,7 @@ const STAGES = [
     title: "Ingest",
     verb: "Collecting",
     description:
-      "Every source — warehouses, event streams, spreadsheets, tickets — lands in one schema. Xai fingerprints each record as it arrives.",
+      "Every source - warehouses, event streams, spreadsheets, tickets - lands in one schema. Xai fingerprints each record as it arrives.",
     metric: "14 sources connected",
   },
   {
@@ -29,7 +29,7 @@ const STAGES = [
     title: "Generate Insight",
     verb: "Synthesizing",
     description:
-      "Findings are written in plain language, ranked by impact, and routed to the person who can act on them — with the evidence attached.",
+      "Findings are written in plain language, ranked by impact, and routed to the person who can act on them - with the evidence attached.",
     metric: "6 insights ready to act on",
   },
 ];
@@ -142,24 +142,21 @@ function StageCard({
 }) {
   return (
     <div
-      className={`group w-[86vw] shrink-0 rounded-2xl border p-8 transition-colors duration-500 md:w-[38vw] md:p-10 ${
-        isActive
+      className={`group w-[86vw] shrink-0 rounded-2xl border p-8 transition-colors duration-500 md:w-[38vw] md:p-10 ${isActive
           ? "border-signal-500/60 bg-ink-900"
           : "border-ink-800 bg-ink-900/40"
-      }`}
+        }`}
     >
       <div className="flex items-center justify-between font-mono text-xs text-mist-400">
         <span
-          className={`transition-colors duration-500 ${
-            isActive ? "text-signal-400" : "text-mist-400"
-          }`}
+          className={`transition-colors duration-500 ${isActive ? "text-signal-400" : "text-mist-400"
+            }`}
         >
           {stage.index}
         </span>
         <span
-          className={`transition-opacity duration-500 ${
-            isActive ? "opacity-100" : "opacity-0"
-          }`}
+          className={`transition-opacity duration-500 ${isActive ? "opacity-100" : "opacity-0"
+            }`}
         >
           {stage.verb}…
         </span>
@@ -174,9 +171,8 @@ function StageCard({
 
       <div className="mt-8 flex items-center gap-2 border-t border-ink-800 pt-5 font-mono text-xs text-mist-300">
         <span
-          className={`h-1.5 w-1.5 rounded-full transition-colors duration-500 ${
-            isActive ? "bg-insight-500" : "bg-ink-700"
-          }`}
+          className={`h-1.5 w-1.5 rounded-full transition-colors duration-500 ${isActive ? "bg-insight-500" : "bg-ink-700"
+            }`}
         />
         {stage.metric}
       </div>
@@ -190,9 +186,8 @@ function ProgressDots({ active }: { active: number }) {
       {STAGES.map((s, i) => (
         <div
           key={s.key}
-          className={`h-[3px] rounded-full transition-all duration-500 ${
-            i === active ? "w-10 bg-signal-500" : "w-4 bg-ink-700"
-          }`}
+          className={`h-[3px] rounded-full transition-all duration-500 ${i === active ? "w-10 bg-signal-500" : "w-4 bg-ink-700"
+            }`}
         />
       ))}
     </div>

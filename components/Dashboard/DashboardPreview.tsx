@@ -20,7 +20,7 @@ export default function DashboardPreview() {
           </h2>
           <p className="mt-4 font-body text-mist-400">
             Not a report you export once. A live workspace that stays current
-            as new data — and new insight — arrives.
+            as new data - and new insight - arrives.
           </p>
         </header>
 
@@ -166,13 +166,12 @@ function InsightsPanel() {
               <td className="px-4 py-3 font-mono text-xs text-mist-300">{row.confidence}%</td>
               <td className="px-4 py-3">
                 <span
-                  className={`rounded-full px-2 py-0.5 font-mono text-[11px] ${
-                    row.impact === "High"
+                  className={`rounded-full px-2 py-0.5 font-mono text-[11px] ${row.impact === "High"
                       ? "bg-insight-500/15 text-insight-400"
                       : row.impact === "Medium"
-                      ? "bg-signal-500/15 text-signal-400"
-                      : "bg-ink-700/60 text-mist-300"
-                  }`}
+                        ? "bg-signal-500/15 text-signal-400"
+                        : "bg-ink-700/60 text-mist-300"
+                    }`}
                 >
                   {row.impact}
                 </span>
@@ -199,14 +198,12 @@ function AutomationsPanel() {
             <p className="mt-1 font-mono text-xs text-mist-400">{a.trigger}</p>
           </div>
           <span
-            className={`flex items-center gap-2 font-mono text-xs ${
-              a.state === "Active" ? "text-signal-400" : "text-mist-400"
-            }`}
+            className={`flex items-center gap-2 font-mono text-xs ${a.state === "Active" ? "text-signal-400" : "text-mist-400"
+              }`}
           >
             <span
-              className={`h-1.5 w-1.5 rounded-full ${
-                a.state === "Active" ? "bg-signal-500" : "bg-ink-700"
-              }`}
+              className={`h-1.5 w-1.5 rounded-full ${a.state === "Active" ? "bg-signal-500" : "bg-ink-700"
+                }`}
             />
             {a.state}
           </span>
@@ -217,7 +214,7 @@ function AutomationsPanel() {
 }
 
 function SourcesPanel() {
-  const sources = ["Postgres — prod", "Snowflake", "Stripe", "Zendesk", "Segment", "S3 — logs"];
+  const sources = ["Postgres - prod", "Snowflake", "Stripe", "Zendesk", "Segment", "S3 - logs"];
   return (
     <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
       {sources.map((s) => (

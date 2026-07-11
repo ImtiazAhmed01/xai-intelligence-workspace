@@ -19,8 +19,8 @@ export default function Signature() {
     progress < 0.15
       ? "Unstructured cluster"
       : progress < 0.55
-      ? "Xai is finding structure…"
-      : "Structured intelligence graph";
+        ? "Xai is finding structure…"
+        : "Structured intelligence graph";
 
   return (
     <section
@@ -41,7 +41,7 @@ export default function Signature() {
               Every point of data finds its place.
             </h2>
             <p className="mt-4 font-body text-mist-400">
-              This is a live model of what Xai does to your data on ingest —
+              This is a live model of what Xai does to your data on ingest -
               not an illustration of it. Scroll to watch the cluster
               self-organize into a graph, ring by ring.
             </p>

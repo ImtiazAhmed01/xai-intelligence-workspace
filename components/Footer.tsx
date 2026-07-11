@@ -33,7 +33,7 @@ export default function Footer() {
               <path d="M8 14H16" stroke="#6ee7ff" strokeWidth="1.6" />
             </svg>
             <span className="font-mono text-xs text-mist-400">
-              xai — intelligence workspace
+              xai - intelligence workspace
             </span>
           </div>
           <p>Designed &amp; built as a product-quality interaction study.</p>

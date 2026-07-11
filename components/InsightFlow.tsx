@@ -9,7 +9,7 @@ const STAGES = [
     index: "01",
     key: "ingest",
     title: "Ingest data",
-    copy: "Every event, document, and signal your systems produce streams in continuously — unfiltered, untyped, and unordered.",
+    copy: "Every event, document, and signal your systems produce streams in continuously - unfiltered, untyped, and unordered.",
   },
   {
     index: "02",
@@ -21,7 +21,7 @@ const STAGES = [
     index: "03",
     key: "insight",
     title: "Generate insight",
-    copy: "The graph resolves into a structured, ranked set of findings — written in plain language, ready for a decision.",
+    copy: "The graph resolves into a structured, ranked set of findings - written in plain language, ready for a decision.",
   },
 ];
 
